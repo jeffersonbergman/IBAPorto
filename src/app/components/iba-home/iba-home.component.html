@@ -1,0 +1,63 @@
+<div class="container-toolbar">
+    <mat-toolbar class="toolbar">
+        <div class="logo">
+            <a class="header-logo" href="/" title="Homepage">
+                <img class="img-logo" src="assets/img/logofull.png" alt="IGREJA BAPTISTA ANTIOQUIA">
+            </a>
+        </div>
+        <div class="button-toolbar">
+            <button mat-stroked-button color="primary" class="button-about">ABOUT</button>
+            <button mat-flat-button color="primary" class="button-ministries">MINISTRIES</button>
+            <button mat-flat-button color="primary" class="button-contactus">CONTACT US</button>
+            <button mat-flat-button color="primary" class="button-resources">RESOURCES</button>
+            <button mat-flat-button color="primary" class="button-events">EVENTS</button>
+        </div>
+        <div class="button-menu">
+            <button mat-icon-button [matMenuTriggerFor]="menu">
+                <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item>
+                  <mat-icon>person</mat-icon>
+                  <span>LOGIN</span>
+                </button>
+                <button mat-menu-item>
+                  <mat-icon>translate</mat-icon>
+                  <span>LANGUAGE</span>
+                </button>
+            </mat-menu>
+
+        </div>
+    </mat-toolbar>
+</div>
+<div class="container-firstPage">
+    <div class="video-container">
+        <img class="home-video" src="assets/img/gifFirstPage.gif" frameBorder="0" allow="autoplay; fullscreen">
+    </div>
+    <div class="default-container">
+        <h1 class="video-title">Preaching Christ, Strengthening His Church.</h1>
+    </div>
+</div>
+<div class="container-secondPage">
+    <article class="article">
+        <h2 class="article-title">Who We Are</h2>
+        <p>The Antioquia Church is a local church that recognizes and affirms the <strong style="color: #1e3557">Lordship of Jesus Christ</strong>.</p>
+        <p> As such, we are committed to striving diligently for the faith that was once for all delivered to the saints from Him (Jude 3).</p> 
+        <p>The essence of this faith is based on the Gospel proclaimed by the Apostles, as well as the underlying instruction, which the Lord commanded to be taught to all who believe (Matthew 28:19-20).</p>
+        <button mat-flat-button color="primary" class="button-article">Learn More</button>
+    </article>
+    <div class="article-img-container"> 
+        <img class="article-img" src="assets/img/Pr.jpg" alt="Article">
+    </div>
+</div>
+<div class="container-thirdPage">
+    <div class="first-img">
+        <img class="img-celebracao" src="/assets/img/Iba-2.png">
+    </div>
+    <div class="second-img">
+        <img class="img-spotif" src="/assets/img/spotif.jpg">
+    </div>
+    <div class="third-img">
+        <img class="img-casasFarol" src="/assets/img/casasfarol.jpg">
+    </div>
+</div>
