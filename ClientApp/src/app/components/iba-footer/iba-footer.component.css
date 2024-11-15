@@ -1,0 +1,72 @@
+.img-logo-footer{
+    width: 25%;
+    filter: brightness(0) invert(1);
+}
+.container-card{
+    background-color: #1e3557;
+    display: flex;
+    justify-content: space-evenly;
+}
+.info{
+    display: flex;
+    flex-direction: column; 
+    margin-top: 20px;
+}
+.text-info{
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: #acaaaa;
+    text-decoration: dashed;
+}
+.social svg {
+    width: 24px; /* Defina a largura desejada */
+    height: 24px; /* Defina a altura desejada */
+    fill: #fff; /* Altere a cor conforme necessário */
+}
+.footer-content p {
+    margin: 0;
+    color: #fff ;
+    margin-top: 10px;
+}
+.button-policy{
+    display: flex;
+    align-items: center;
+    width: 12%;
+    position: relative;
+    right: 100px;
+}
+.button{
+    width: 100%;
+    color: #fff;
+    border-color: #fff;
+    font-weight: 600;
+}
+button:disabled {
+    pointer-events: none;
+}
+   
+button:hover {
+    color: #1e3557;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+   
+button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.Homepage{
+    display: flex;
+    justify-content: center;
+}
+.social{
+    text-align: center;
+    align-self: center;
+}

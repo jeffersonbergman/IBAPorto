@@ -1,0 +1,88 @@
+// Custom Theming for Angular Material
+@use '@angular/material' as mat;
+
+// Inclua os estilos principais do Angular Material.
+@include mat.core();
+
+// Defina a paleta primária com várias tonalidades, incluindo a cor principal (#7B1536)
+$ClientApp-primary: mat.define-palette((
+  50: #fde3e8,
+  100: #f8b4c2,
+  200: #f18499,
+  300: #ea546f,
+  400: #e33154,
+  500: #7B1536, // Cor principal
+  600: #701234,
+  700: #66112e,
+  800: #5c1028,
+  900: #4a0d1d,
+  A100: #ffb3c4,
+  A200: #ff8099,
+  A400: #ff4d6e,
+  A700: #ff3358,
+  contrast: (
+    50: black,
+    100: black,
+    200: black,
+    300: white,
+    400: white,
+    500: white, // Contraste com a cor principal
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+    A100: black,
+    A200: black,
+    A400: white,
+    A700: white,
+  )
+));
+
+// Defina a paleta de destaque com várias tonalidades, incluindo a cor principal (#182737)
+$ClientApp-accent: mat.define-palette((
+  50: #e1e5ea,
+  100: #b2bdc9,
+  200: #8194a5,
+  300: #4e6b80,
+  400: #2b4b66,
+  500: #182737, // Cor de destaque
+  600: #162431,
+  700: #141f2a,
+  800: #111b24,
+  900: #0c1318,
+  A100: #8da4c1,
+  A200: #5f7c9f,
+  A400: #2f547c,
+  A700: #1b3b5c,
+  contrast: (
+    50: black,
+    100: black,
+    200: black,
+    300: white,
+    400: white,
+    500: white, // Contraste com a cor de destaque
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+    A100: black,
+    A200: black,
+    A400: white,
+    A700: white,
+  )
+));
+
+// Defina a paleta de aviso (warn) usando a paleta predefinida de vermelho
+$ClientApp-warn: mat.define-palette(mat.$red-palette);
+
+// Crie o tema usando as paletas definidas
+$ClientApp-theme: mat.define-light-theme((
+  color: (
+    primary: $ClientApp-primary,
+    accent: $ClientApp-accent,
+    warn: $ClientApp-warn,
+  )
+));
+
+// Inclua os estilos de tema para o núcleo e para cada componente usado no aplicativo
+@include mat.all-component-themes($ClientApp-theme);

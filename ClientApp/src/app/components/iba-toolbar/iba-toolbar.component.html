@@ -1,0 +1,32 @@
+<div class="container-toolbar">
+    <mat-toolbar class="toolbar">
+        <div class="logo">
+            <a class="header-logo" href="/" title="Homepage">
+                <img class="img-logo" src="assets/img/logofull.png" alt="IGREJA BAPTISTA ANTIOQUIA">
+            </a>
+        </div>
+        <div class="button-toolbar">
+            <button mat-stroked-button color="primary" class="button-about">SOBRE</button>
+            <button mat-flat-button color="primary" class="button-ministries" (click)="navigateTo('/ministries')">MINISTÉRIOS</button>
+            <button mat-flat-button color="primary" class="button-contactus" (click)="navigateTo('/contact')">CONTACTO</button>
+            <button mat-flat-button color="primary" class="button-resources">RECURSOS</button>
+            <button mat-flat-button color="primary" class="button-events">EVENTOS</button>
+        </div>
+        <div class="button-menu">
+            <button color="primary" mat-icon-button [matMenuTriggerFor]="menu">
+                <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item (click)="navigateTo('/login')">
+                  <mat-icon>person</mat-icon>
+                  <span>LOGIN</span>
+                </button>
+                <button mat-menu-item>
+                  <mat-icon>translate</mat-icon>
+                  <span>LANGUAGE</span>
+                </button>
+            </mat-menu>
+
+        </div>
+    </mat-toolbar>
+</div>
